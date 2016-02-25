@@ -37,4 +37,4 @@ def lrc_wrapper(lrc_dict):
         for (key, value) in sorted(lrc_dict['body'].items()):
             lrc_lines += '%s%s\n' % (__time_wrapper(key), value)
 
-    return lrc_lines
+    return lrc_lines.encode('utf-8')
