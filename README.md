@@ -37,7 +37,7 @@ python music163_get_lyric_json.py 401249250
 或者重定向输出到文件
 
 ```shell
-python music163_get_lyric_json.py 401249250 > example.json
+python music163_get_lyric_json.py 401249250 > output.json
 ```
 
 不足
@@ -58,3 +58,21 @@ lrcutility
 无法解析叠在一起的时间标签，如
 
     [xx:xx.xxx][xx:xx.xxx] xxxxx
+
+
+## 未来道具3号机
+music163_json2LRC
+
+将从网易抓来的json歌词恢复成 LRC 文件
+
+使用方法
+
+```shell
+python music163_json2LRC.py input.json> output.lrc
+```
+
+可以结合 未来道具1号机(music163_get_lyric_json)一起使用，直接将下载下来的数据转成 LRC 保存
+
+```shell
+python music163_get_lyric_json.py 34478647 | python music163_json2LRC.py > output.lrc
+```
