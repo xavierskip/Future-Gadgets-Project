@@ -43,3 +43,18 @@ python music163_get_lyric_json.py 401249250 > example.json
 不足
 
 没有处理错误情况
+
+
+## 未来道具2号机
+lrcutility
+
+对 LRC 做词法分析，构成时间与歌词匹配的词典。
+以及再将该词典打包成LRC歌词
+
+是 未来道具3号机 的重要组成部件
+
+不足
+
+无法解析叠在一起的时间标签，如
+
+    [xx:xx.xxx][xx:xx.xxx] xxxxx
