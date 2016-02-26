@@ -82,6 +82,16 @@ music163_lrc
 
 未来道具1到3号使用太麻烦，所以用 javascript 写了个脚本，可以一键显示歌词
 
+使用方法
+
+将下面这段代码保存为书签。
+
+```js
+javascript:void(function(u,s){s=document.body.appendChild(document.createElement('script'));s.src=u+'?ts='+Date.now();s.charset='UTF-8'}('https://github.com/hufan-Akari/Future-Gadgets-Project/raw/master/music163_lrc.js'))
+```
+
+
 不足
 
-页面会跳转，暂时无法作为文件下载。
+页面会跳转，IE ,Edge , Safari 无法作为文件下载。
+
