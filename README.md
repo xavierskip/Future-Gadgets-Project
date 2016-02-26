@@ -76,3 +76,12 @@ python music163_json2LRC.py input.json> output.lrc
 ```shell
 python music163_get_lyric_json.py 34478647 | python music163_json2LRC.py > output.lrc
 ```
+
+## 未来道具4号机
+music163_lrc
+
+未来道具1到3号使用太麻烦，所以用 javascript 写了个脚本，可以一键显示歌词
+
+不足
+
+页面会跳转，暂时无法作为文件下载。
