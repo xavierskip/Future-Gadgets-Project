@@ -87,7 +87,7 @@ music163_lrc
 将下面这段代码保存为书签。
 
 ```js
-javascript:void(function(u,s){s=document.body.appendChild(document.createElement('script'));s.src=u+'?ts='+Date.now();s.charset='UTF-8'}('https://github.com/hufan-Akari/Future-Gadgets-Project/raw/master/music163_lrc.js'))
+javascript:void(function(u,s){s=document.body.appendChild(document.createElement('script'));s.src=u+'?ts='+Date.now();s.charset='UTF-8'}('//cdn.rawgit.com/hufan-Akari/Future-Gadgets-Project/master/music163_lrc.js'))
 ```
 
 
