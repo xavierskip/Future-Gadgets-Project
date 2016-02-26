@@ -16,6 +16,11 @@
         var link = document.createElement("a");
         link.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(lrc_text);
         link.setAttribute("download", player.getPlaying().track.name + '.lrc');
-        link.click();
+        // link.click(); // doesn't work in firefox
+        link.dispatchEvent(new MouseEvent("click", {
+            "view": window,
+            "bubbles": true,
+            "cancelable": false
+        }));
     }, timeout);
 })();
