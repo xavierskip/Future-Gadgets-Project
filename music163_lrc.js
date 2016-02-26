@@ -11,7 +11,7 @@
             var time = parseFloat(lrc_list[key].getAttribute('data-time'));
             var minute = ('0' + parseInt(time / 60)).substr(-2);
             var second = ('0' + (time % 60).toFixed(3)).substr(-6);
-            lrc_text += '[' + minute + ':' + second + '] ' + lrc_list[key].innerHTML.replace('<br>', '  ') + '\n';
+            lrc_text += '[' + minute + ':' + second + '] ' + lrc_list[key].innerHTML.replace('<br>', '  ') + '\r\n';
         }
         var link = document.createElement("a");
         link.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(lrc_text);
