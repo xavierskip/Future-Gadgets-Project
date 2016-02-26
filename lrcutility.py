@@ -24,7 +24,7 @@ def lrc_parser(lines):
 
 def __time_wrapper(number):
     minute = number // 60000
-    second = ((number - minute * 60000) % 1000)/1000.0
+    second = (number % 60000)/1000.0
     return '[%02d:%06.3f]' % (minute, second)
 
 
@@ -32,9 +32,9 @@ def lrc_wrapper(lrc_dict):
     lrc_lines = ""
     if lrc_dict['head']:
         for (key, value) in lrc_dict['head'].iteritems():
-            lrc_lines += '[%s:%s]\n' % (key, value)
+            lrc_lines += '[%s:%s] \r\n' % (key, value)
     if lrc_dict['body']:
         for (key, value) in sorted(lrc_dict['body'].items()):
-            lrc_lines += '%s%s\n' % (__time_wrapper(key), value)
+            lrc_lines += '%s %s\r\n' % (__time_wrapper(key), value)
 
     return lrc_lines.encode('utf-8')
