@@ -84,7 +84,11 @@ music163_lrc
 
 使用方法
 
-将下面这段代码保存为书签。
+将下面这个链接拖到收藏夹栏。
+
+<a href="javascript:void(function(u,s){s=document.body.appendChild(document.createElement('script'));s.src=u+'?ts='+Date.now();s.charset='UTF-8'}('//rawgit.com/hufan-Akari/Future-Gadgets-Project/master/music163_lrc.js'))">GET LYRIC</a>
+
+或者将下面这段代码作为地址保存到收藏夹。
 
 ```js
 javascript:void(function(u,s){s=document.body.appendChild(document.createElement('script'));s.src=u+'?ts='+Date.now();s.charset='UTF-8'}('//rawgit.com/hufan-Akari/Future-Gadgets-Project/master/music163_lrc.js'))
@@ -93,5 +97,6 @@ javascript:void(function(u,s){s=document.body.appendChild(document.createElement
 
 不足
 
-页面会跳转，IE ,Edge , Safari 无法作为文件下载。
+Safari 页面会跳转，
+IE ,Edge 无响应。
 
