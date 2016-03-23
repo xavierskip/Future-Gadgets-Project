@@ -100,3 +100,18 @@ javascript:void(function(u,s){s=document.body.appendChild(document.createElement
 Safari 页面会跳转，
 IE ,Edge 无响应。
 
+## 未来道具5号机
+Finder New File
+
+给 OS X 的finder添加新建文本文档的功能。
+
+使用方法
+
+* 用 AppleScript Editor 打开该脚本
+* 导出脚本为 app
+* 在 finder 工具栏上辅助点击，选择自定义工具栏 (或者 view->Customize Toobar...)
+* 把生成的 app 拖进工具栏
+
+不足
+
+只能新建纯文本文档。
